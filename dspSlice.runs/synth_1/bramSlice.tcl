@@ -22,13 +22,21 @@ create_project -in_memory -part xc7vx485tffg1157-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/ayans/Documents/dspSlice/dspSlice.cache/wt [current_project]
-set_property parent.project_path C:/Users/ayans/Documents/dspSlice/dspSlice.xpr [current_project]
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_property webtalk.parent_dir C:/Users/ayans/Documents/BenchmarkSuite/dspSlice.cache/wt [current_project]
+set_property parent.project_path C:/Users/ayans/Documents/BenchmarkSuite/dspSlice.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/ayans/Documents/dspSlice/dspSlice.cache/ip [current_project]
+set_property ip_output_repo c:/Users/ayans/Documents/BenchmarkSuite/dspSlice.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/ayans/Documents/dspSlice/dspSlice.srcs/sources_1/new/slice.v
+read_verilog -library xil_defaultlib {
+  C:/Users/ayans/Documents/BenchmarkSuite/dspSlice.srcs/sources_1/new/slice.v
+  C:/Users/ayans/Documents/BenchmarkSuite/dspSlice.srcs/sources_1/new/bramSlice.v
+}
+read_ip -quiet C:/Users/ayans/Documents/BenchmarkSuite/dspSlice.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/ayans/Documents/BenchmarkSuite/dspSlice.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -40,12 +48,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top slice -part xc7vx485tffg1157-1
+synth_design -top bramSlice -part xc7vx485tffg1157-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef slice.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file slice_utilization_synth.rpt -pb slice_utilization_synth.pb"
+write_checkpoint -force -noxdef bramSlice.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file bramSlice_utilization_synth.rpt -pb bramSlice_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

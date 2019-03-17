@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ayans/Documents/dspSlice/dspSlice.runs/synth_1'
+HD_PWD='C:/Users/ayans/Documents/BenchmarkSuite/dspSlice.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log slice.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source slice.tcl
+EAStep vivado -log bramSlice.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bramSlice.tcl
