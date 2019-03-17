@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tbDCP_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tbDCP" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="199200001fs"></ZoomEndTime>
+      <Cursor1Time time="100100000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="140"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tbDCP/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/Ain" type="array">
+      <obj_property name="ElementShortName">Ain[17:0]</obj_property>
+      <obj_property name="ObjectShortName">Ain[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/Bin" type="array">
+      <obj_property name="ElementShortName">Bin[17:0]</obj_property>
+      <obj_property name="ObjectShortName">Bin[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/Pout" type="array">
+      <obj_property name="ElementShortName">Pout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">Pout[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider17">
+      <obj_property name="label">dcpSlice</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/Ain" type="array">
+      <obj_property name="ElementShortName">Ain[17:0]</obj_property>
+      <obj_property name="ObjectShortName">Ain[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/Bin" type="array">
+      <obj_property name="ElementShortName">Bin[17:0]</obj_property>
+      <obj_property name="ObjectShortName">Bin[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/Pout" type="array">
+      <obj_property name="ElementShortName">Pout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">Pout[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/S" type="logic">
+      <obj_property name="ElementShortName">S</obj_property>
+      <obj_property name="ObjectShortName">S</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/CE" type="logic">
+      <obj_property name="ElementShortName">CE</obj_property>
+      <obj_property name="ObjectShortName">CE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/A" type="array">
+      <obj_property name="ElementShortName">A[17:0]</obj_property>
+      <obj_property name="ObjectShortName">A[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/B" type="array">
+      <obj_property name="ElementShortName">B[17:0]</obj_property>
+      <obj_property name="ObjectShortName">B[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/P" type="logic">
+      <obj_property name="ElementShortName">P</obj_property>
+      <obj_property name="ObjectShortName">P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tbDCP/dsp/Preg" type="array">
+      <obj_property name="ElementShortName">Preg[47:0]</obj_property>
+      <obj_property name="ObjectShortName">Preg[47:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider30">
+      <obj_property name="label">ff1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+</wave_config>

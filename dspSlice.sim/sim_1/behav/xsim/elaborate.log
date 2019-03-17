@@ -1,0 +1,40 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 37a1132be91d4887b220ec4f24f0967f --incr --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_utils_v3_0_9 -L xbip_pipe_v3_0_5 -L xbip_dsp48_macro_v3_0_16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tbDCP_behav xil_defaultlib.tbDCP xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_dsp48_macro_v3_0_16.xbip_dsp48_macro_v3_0_16_viv_com...
+Compiling package xbip_dsp48_macro_v3_0_16.xbip_dsp48_macro_v3_0_16_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module unisims_ver.FDSE(INIT=1'b0)
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=18...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=48...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=2,adreg=0,areg...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(areg=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_width=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(1,1)(1,1)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0_16.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(c_has_d=...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0_16.xbip_dsp48_macro_v3_0_16_viv [\xbip_dsp48_macro_v3_0_16_viv(c_...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0_16.xbip_dsp48_macro_v3_0_16 [\xbip_dsp48_macro_v3_0_16(c_xdev...]
+Compiling architecture xbip_dsp48_macro_0_arch of entity xil_defaultlib.xbip_dsp48_macro_0 [xbip_dsp48_macro_0_default]
+Compiling module xil_defaultlib.dspSlice_default
+Compiling module xil_defaultlib.tbDCP
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbDCP_behav

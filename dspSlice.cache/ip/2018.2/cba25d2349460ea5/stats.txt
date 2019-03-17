@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Fri Feb 22 08:33:56 UTC 2019
+VLNV: xilinx.com:ip:xbip_dsp48_macro:3.0
+SynthRuntime: 76
